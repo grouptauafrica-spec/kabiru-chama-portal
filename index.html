@@ -27,7 +27,6 @@
                         navy: {
                             800: '#0B192C',
                             900: '#030712',
-                            800_90: 'rgba(11, 25, 44, 0.9)',
                         },
                         emeraldCustom: {
                             500: '#10B981',
@@ -55,7 +54,7 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .gold-gradient-text {
-            background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+            background: linear-gradient(135deg, #FBBF24 0%, #34D399 50%, #F59E0B 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -67,16 +66,91 @@
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20 gap-2">
                 
-                <!-- Logo & Scaled Mobile Title Header -->
-                <a href="#" class="flex items-center gap-2 sm:gap-3 shrink-0 max-w-[65%] sm:max-w-none">
-                    <img src="c4f1734b-0f55-4825-90c4-2adf43546ce0_3_watermark.jpg" alt="Seal of Economic Empowerment" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-amber-500/80 shadow-md shadow-amber-500/20 shrink-0">
+                <!-- Logo & Responsive Mobile Title Header -->
+                <a href="#" class="flex items-center gap-2 sm:gap-3 shrink-0 max-w-[68%] sm:max-w-none">
+                    <!-- Tree of Life Golden Jade DNA Helix SVG Seal -->
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-amber-400/80 shadow-md shadow-emerald-500/20 bg-slate-950 shrink-0 flex items-center justify-center p-0.5">
+                        <svg viewBox="0 0 200 200" class="w-full h-full">
+                            <defs>
+                                <!-- Golden Jade Gradient -->
+                                <radialGradient id="jadeGoldBg" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#064e3b" />
+                                    <stop offset="70%" stop-color="#022c22" />
+                                    <stop offset="100%" stop-color="#030712" />
+                                </radialGradient>
+                                <linearGradient id="canopyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f59e0b" />
+                                    <stop offset="50%" stop-color="#10b981" />
+                                    <stop offset="100%" stop-color="#fbbf24" />
+                                </linearGradient>
+                                <linearGradient id="dnaStrand1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#fbbf24" />
+                                    <stop offset="100%" stop-color="#34d399" />
+                                </linearGradient>
+                                <linearGradient id="dnaStrand2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#10b981" />
+                                    <stop offset="100%" stop-color="#f59e0b" />
+                                </linearGradient>
+                                <path id="textArcTop" d="M 25,100 A 75,75 0 1,1 175,100" />
+                                <path id="textArcBottom" d="M 175,100 A 75,75 0 0,1 25,100" />
+                            </defs>
+                            
+                            <!-- Outer Ring Base -->
+                            <circle cx="100" cy="100" r="98" fill="url(#jadeGoldBg)" stroke="#f59e0b" stroke-width="3" />
+                            <circle cx="100" cy="100" r="82" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="3,3" />
+
+                            <!-- Semi-Circular Curved Text -->
+                            <text font-size="10" font-weight="bold" fill="#fbbf24" letter-spacing="1">
+                                <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+                                    DEPARTMENT OF ECONOMIC EMPOWERMENT
+                                </textPath>
+                            </text>
+                            <text font-size="9" font-weight="bold" fill="#34d399" letter-spacing="1">
+                                <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+                                    VIA JOINT VENTURES
+                                </textPath>
+                            </text>
+
+                            <!-- Tree Roots at Base -->
+                            <g stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.85">
+                                <path d="M 100,140 Q 80,160 60,170 M 100,140 Q 90,165 80,175 M 100,140 Q 110,165 120,175 M 100,140 Q 120,160 140,170" />
+                            </g>
+
+                            <!-- DNA Helix Trunk -->
+                            <g stroke-width="2.5" fill="none">
+                                <path d="M 90,90 Q 110,105 90,120 T 90,140" stroke="url(#dnaStrand1)" />
+                                <path d="M 110,90 Q 90,105 110,120 T 110,140" stroke="url(#dnaStrand2)" />
+                                <!-- DNA Rungs -->
+                                <line x1="93" y1="95" x2="107" y2="95" stroke="#fbbf24" stroke-width="1.5" />
+                                <line x1="97" y1="105" x2="103" y2="105" stroke="#34d399" stroke-width="1.5" />
+                                <line x1="93" y1="115" x2="107" y2="115" stroke="#fbbf24" stroke-width="1.5" />
+                                <line x1="97" y1="128" x2="103" y2="128" stroke="#34d399" stroke-width="1.5" />
+                            </g>
+
+                            <!-- Golden Jade Tree Canopy Leaves -->
+                            <g fill="url(#canopyGradient)">
+                                <circle cx="100" cy="55" r="22" opacity="0.9" />
+                                <circle cx="78" cy="68" r="18" opacity="0.85" />
+                                <circle cx="122" cy="68" r="18" opacity="0.85" />
+                                <circle cx="62" cy="82" r="14" opacity="0.8" />
+                                <circle cx="138" cy="82" r="14" opacity="0.8" />
+                                <circle cx="100" cy="78" r="16" opacity="0.9" />
+                            </g>
+
+                            <!-- Shining Golden Stars -->
+                            <polygon points="100,30 102,35 107,35 103,38 105,43 100,40 95,43 97,38 93,35 98,35" fill="#f59e0b" />
+                            <polygon points="20,100 22,103 25,103 23,105 24,108 20,106 16,108 17,105 15,103 18,103" fill="#f59e0b" />
+                            <polygon points="180,100 182,103 185,103 183,105 184,108 180,106 176,108 177,105 175,103 178,103" fill="#f59e0b" />
+                        </svg>
+                    </div>
+
                     <div class="min-w-0">
                         <span class="text-xs xs:text-sm sm:text-base md:text-xl font-black tracking-tight text-white block leading-tight truncate">KABIRU CHAMA</span>
                         <span class="text-[9px] xs:text-[10px] sm:text-xs font-semibold tracking-wider text-amber-400 uppercase block truncate">Sovereign Account</span>
                     </div>
                 </a>
                 
-                <!-- Desktop Navigation Links -->
+                <!-- Desktop Links -->
                 <div class="hidden xl:flex items-center gap-5 text-sm font-medium">
                     <a href="#about" class="hover:text-amber-400 transition-colors">About Us</a>
                     <a href="#spectrum" class="hover:text-amber-400 transition-colors">Growth Spectrum</a>
@@ -93,7 +167,7 @@
                     </a>
                     
                     <button onclick="scrollToPortals()" class="inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-slate-100 px-2.5 xs:px-3 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold border border-slate-700 shadow-sm transition-all">
-                        <i class="fa-solid fa-user-gear text-amber-400 text-xs sm:text-sm"></i>
+                        <i class="fa-solid fa-wallet text-amber-400 text-xs sm:text-sm"></i>
                         <span>My Account</span>
                     </button>
 
@@ -114,10 +188,10 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-3xl mx-auto">
                     
-                    <!-- Official Seal Badge -->
+                    <!-- Official Tree Seal Badge -->
                     <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900/90 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-semibold mb-6 shadow-xl">
-                        <img src="c4f1734b-0f55-4825-90c4-2adf43546ce0_3_watermark.jpg" alt="Seal" class="w-6 h-6 rounded-full border border-amber-400">
-                        <span>Department of Economic Empowerment & Joint Ventures</span>
+                        <i class="fa-solid fa-tree text-emerald-400 text-base"></i>
+                        <span>Department of Economic Empowerment via Joint Ventures</span>
                     </div>
                     
                     <h1 class="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
@@ -134,12 +208,12 @@
                             <i class="fa-solid fa-user-plus"></i> Join Kabiru Chama
                         </button>
                         <button onclick="scrollToPortals()" class="w-full sm:w-auto bg-slate-800/90 hover:bg-slate-800 text-amber-300 border border-amber-500/30 font-semibold px-7 py-3.5 rounded-xl text-sm sm:text-base transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-door-open text-amber-400"></i> Access My Account
+                            <i class="fa-solid fa-wallet text-amber-400"></i> Access Family Tree Wallet
                         </button>
                     </div>
                 </div>
 
-                <!-- Key Stat Banner -->
+                <!-- Key Stat Banner with Family Tree Wallet Notification -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mt-12 sm:mt-16 max-w-5xl mx-auto">
                     <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 sm:p-5 text-center shadow-lg">
                         <div class="text-xl sm:text-3xl font-extrabold text-amber-400">Ksh 2,000</div>
@@ -154,9 +228,15 @@
                         <div class="text-xs text-slate-400 mt-1">Reciprocal Ownership</div>
                     </div>
                     <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 sm:p-5 text-center shadow-lg">
-                        <div class="text-xl sm:text-3xl font-extrabold text-purple-400">Sovereign</div>
-                        <div class="text-xs text-slate-400 mt-1">Community Structure</div>
+                        <div class="text-xl sm:text-3xl font-extrabold text-purple-400">Family Wallet</div>
+                        <div class="text-xs text-slate-400 mt-1">Savings & Withdrawals</div>
                     </div>
+                </div>
+
+                <!-- Family Tree Wallet Banner Notice -->
+                <div class="mt-6 max-w-3xl mx-auto p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-center text-xs text-amber-200 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-amber-400 text-sm"></i>
+                    <span><strong>Notice:</strong> All savings deposits, withdrawals, and ledger balances are processed directly via the <strong>Family Tree Wallet</strong>.</span>
                 </div>
             </div>
         </section>
@@ -184,11 +264,11 @@
 
                             <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-700/50">
                                 <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-vault text-lg"></i>
+                                    <i class="fa-solid fa-wallet text-lg"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm sm:text-base">Bank Account Security</h4>
-                                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">Savings deposits are directed to the Joint Signatories Account of <strong>Valentor Company Ltd</strong> for maximum safety, transparency, and administrative security.</p>
+                                    <h4 class="font-bold text-white text-sm sm:text-base">Family Tree Wallet Custody</h4>
+                                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">All transactions, weekly contributions, and withdrawals are executed via the integrated <strong>Family Tree Wallet</strong> for complete administrative safety and auditability.</p>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +285,7 @@
                         <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
                             <div class="text-2xl text-emerald-400 mb-2"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                             <h3 class="text-base font-bold text-white mb-1">Flexible Withdrawals</h3>
-                            <p class="text-xs text-emerald-400 font-semibold mb-1.5">Owner's Funds First</p>
+                            <p class="text-xs text-emerald-400 font-semibold mb-1.5">Family Tree Wallet</p>
                             <p class="text-xs text-slate-400">Your savings remain your money. Withdraw at any time or allocate towards preferred joint enterprises.</p>
                         </div>
 
@@ -243,7 +323,7 @@
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm mb-3">01</div>
                             <h3 class="text-base font-bold text-white mb-1">Weekly Savings</h3>
-                            <div class="text-xs font-semibold text-amber-400 mb-2">Base Foundation</div>
+                            <div class="text-xs font-semibold text-amber-400 mb-2">Family Tree Wallet</div>
                             <p class="text-xs text-slate-400 leading-relaxed">
                                 Successful weekly savings mature into capital reserved for Joint Venture Businesses.
                             </p>
@@ -444,7 +524,7 @@
                         Art. I: Membership & Entry
                     </button>
                     <button onclick="switchTab('article2')" id="tab-article2" class="tab-btn bg-slate-800 text-slate-300 hover:bg-slate-700 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm">
-                        Art. II: Savings & Security
+                        Art. II: Savings & Family Tree Wallet
                     </button>
                     <button onclick="switchTab('article3')" id="tab-article3" class="tab-btn bg-slate-800 text-slate-300 hover:bg-slate-700 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm">
                         Art. III: Joint Ventures & LLPs
@@ -474,13 +554,13 @@
 
                     <div id="article2" class="tab-content hidden space-y-4">
                         <h3 class="text-lg sm:text-xl font-bold text-emerald-400 flex items-center gap-2">
-                            <i class="fa-solid fa-vault"></i> Article II: Savings Structures, Custody & Kabiru Reciprocity
+                            <i class="fa-solid fa-wallet"></i> Article II: Savings Structures, Family Tree Wallet & Kabiru Reciprocity
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
                             <strong>Section 2.1 — Weekly Minimum Deposit:</strong> Members commit to saving a minimum of <strong>Ksh 1,000 per week per head</strong>. Members are permitted and encouraged to save higher amounts.
                         </p>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                            <strong>Section 2.2 — Custody Account:</strong> All savings are directly deposited into the Joint Signatories Account of <strong>Valentor Company Ltd</strong> for maximum security, transparency, and accounting accuracy.
+                            <strong>Section 2.2 — Wallet Custody:</strong> All savings deposits, ledger balances, and member withdrawals are exclusively administered through the official <strong>Family Tree Wallet</strong>.
                         </p>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
                             <strong>Section 2.3 — Kabiru Credits Mandate:</strong> Members must reciprocate every deposit by acquiring equivalent Kabiru Credits on <a href="https://kabiru.org" target="_blank" class="text-sky-400 underline">Kabiru.org</a> to grow their ecosystem balance.
@@ -492,7 +572,7 @@
                             <i class="fa-solid fa-briefcase"></i> Article III: Joint Ventures, LLPs & Withdrawal Terms
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                            <strong>Section 3.1 — Ownership Protection:</strong> Savings remain the exclusive personal property of the depositing member and may be withdrawn upon written notice or converted into Joint Venture capital.
+                            <strong>Section 3.1 — Ownership Protection:</strong> Savings remain the exclusive personal property of the depositing member and may be withdrawn at any time via the Family Tree Wallet or converted into Joint Venture capital.
                         </p>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
                             <strong>Section 3.2 — Venture Maturation:</strong> Successful Joint Venture Businesses shall transition into legally registered Limited Liability Partnership (LLP) Companies with equity proportional to contribution.
@@ -524,7 +604,7 @@
                             <span class="text-amber-400 font-bold tracking-widest text-xs uppercase">Interactive Projection Engine</span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-4">Savings & Kabiru Credits Calculator</h2>
                             <p class="text-slate-300 text-xs sm:text-sm mb-6 leading-relaxed">
-                                Estimate your total capital growth and equivalent Kabiru Credits reciprocity over time.
+                                Estimate your total capital growth and equivalent Kabiru Credits reciprocity over time. All figures sync with your Family Tree Wallet account.
                             </p>
 
                             <div class="space-y-6">
@@ -551,7 +631,7 @@
                             
                             <div class="space-y-4 my-4">
                                 <div>
-                                    <span class="text-xs text-slate-400 uppercase font-semibold">Total Savings Cash (Valentor Co. Ltd Account)</span>
+                                    <span class="text-xs text-slate-400 uppercase font-semibold">Total Savings Cash (Family Tree Wallet)</span>
                                     <div id="totalPersonalSavings" class="text-2xl sm:text-3xl font-extrabold text-amber-400 mt-1">Ksh 52,000</div>
                                 </div>
 
@@ -567,7 +647,7 @@
                             </div>
 
                             <button onclick="openModal()" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 text-navy-900 font-bold py-3 rounded-xl transition-all shadow-lg text-center text-xs sm:text-sm">
-                                Start Your Account
+                                Open Family Tree Wallet Account
                             </button>
                         </div>
                     </div>
@@ -580,12 +660,12 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-10">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-amber-400 text-xs font-semibold mb-3">
-                        <img src="c4f1734b-0f55-4825-90c4-2adf43546ce0_3_watermark.jpg" alt="Seal" class="w-4 h-4 rounded-full">
+                        <i class="fa-solid fa-tree text-emerald-400"></i>
                         <span>Official Account Access Hub</span>
                     </div>
                     <h2 class="text-2xl sm:text-4xl font-extrabold text-white">My Account — Chama Portals</h2>
                     <p class="text-slate-400 mt-2 text-xs sm:text-sm">
-                        Choose your portal tier below. Free Portal provides basic savings tracking, while Full Membership unlocks complete wealth building, joint enterprise partnerships, and sovereignty access.
+                        Choose your portal tier below. Free Portal provides basic savings tracking, while Full Membership unlocks complete wealth building, joint enterprise partnerships, and sovereignty access. All transactions run on the Family Tree Wallet.
                     </p>
                 </div>
 
@@ -595,7 +675,7 @@
                         <i class="fa-solid fa-piggy-bank text-emerald-400 text-base sm:text-lg"></i>
                         <div class="text-left">
                             <span class="block text-xs sm:text-sm font-bold">Free Portal</span>
-                            <span class="block text-[10px] text-slate-400">Savings & Balance Only</span>
+                            <span class="block text-[10px] text-slate-400">Savings & Family Wallet</span>
                         </div>
                     </button>
 
@@ -603,7 +683,7 @@
                         <i class="fa-solid fa-crown text-amber-400 text-base sm:text-lg"></i>
                         <div class="text-left">
                             <span class="block text-xs sm:text-sm font-bold">Full Membership Portal</span>
-                            <span class="block text-[10px] text-amber-300">Wealth Building & Ventures</span>
+                            <span class="block text-[10px] text-amber-300">Wealth & Joint Ventures</span>
                         </div>
                     </button>
                 </div>
@@ -616,9 +696,9 @@
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-4 border-b border-slate-800 gap-2">
                             <div>
                                 <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30 inline-block mb-1">
-                                    <i class="fa-solid fa-shield-heart"></i> Free Tier — Savings Account
+                                    <i class="fa-solid fa-shield-heart"></i> Free Tier — Savings Only
                                 </span>
-                                <h3 class="text-xl font-bold text-white">Basic Savings Ledger & Custody</h3>
+                                <h3 class="text-xl font-bold text-white">Family Tree Wallet Basic Ledger</h3>
                             </div>
                             <button onclick="togglePortalTier('full')" class="text-xs text-amber-400 hover:underline font-bold">
                                 Upgrade to Full Wealth Membership <i class="fa-solid fa-arrow-right"></i>
@@ -648,23 +728,23 @@
 
                             <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between">
                                 <div>
-                                    <span class="text-xs text-slate-500 block uppercase font-bold">Free Ledger Status</span>
+                                    <span class="text-xs text-slate-500 block uppercase font-bold">Family Tree Wallet Ledger</span>
                                     <h4 id="displayFreeName" class="text-lg font-bold text-emerald-400 mt-1">Account Holder</h4>
                                     
                                     <div class="my-4 p-4 bg-slate-900 rounded-xl border border-slate-800">
-                                        <span class="text-xs text-slate-400 block">Total Deposited Cash</span>
+                                        <span class="text-xs text-slate-400 block">Total Wallet Balance</span>
                                         <span id="displayFreeBalance" class="text-2xl font-extrabold text-white mt-0.5 block">Ksh 8,000</span>
-                                        <span class="text-[10px] text-slate-500 block mt-1">Held securely in Valentor Company Ltd Account</span>
+                                        <span class="text-[10px] text-emerald-400 block mt-1"><i class="fa-solid fa-circle-check"></i> Managed securely via Family Tree Wallet</span>
                                     </div>
 
                                     <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800/80 text-xs text-slate-400">
-                                        <i class="fa-solid fa-lock text-slate-500 mr-1"></i> <strong>Free Tier Limitation:</strong> Savings are held securely, but venture equity, LLP corporate setup, and Kabiru Credits claims are locked for Full Members.
+                                        <i class="fa-solid fa-lock text-slate-500 mr-1"></i> <strong>Free Tier Limitation:</strong> Savings are held safely, but venture equity, LLP setup, and Kabiru Credits reciprocity require Full Membership.
                                     </div>
                                 </div>
 
                                 <div class="mt-4 pt-3 border-t border-slate-800 flex gap-2">
                                     <a href="https://chat.whatsapp.com/DHFgg72PKgq5iaIWkW2Oo4" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 rounded-xl text-xs text-center">
-                                        Notify Deposit on WhatsApp
+                                        Notify Wallet Deposit on WhatsApp
                                     </a>
                                 </div>
                             </div>
@@ -689,7 +769,7 @@
                             <!-- Profile Data Input -->
                             <div class="lg:col-span-5 bg-slate-950 p-5 sm:p-6 rounded-2xl border border-slate-800">
                                 <h3 class="text-sm sm:text-base font-bold text-white mb-4 flex items-center gap-2">
-                                    <i class="fa-solid fa-id-card text-amber-400"></i> Full Member Account Profile
+                                    <i class="fa-solid fa-id-card text-amber-400"></i> Full Member Profile
                                 </h3>
                                 <div class="space-y-3 text-xs">
                                     <div>
@@ -737,9 +817,9 @@
 
                                     <div class="grid grid-cols-2 gap-3 mb-4">
                                         <div class="bg-slate-900 p-3.5 rounded-xl border border-slate-800">
-                                            <span class="text-slate-400 text-xs block">Personal Savings</span>
+                                            <span class="text-slate-400 text-xs block">Family Tree Wallet</span>
                                             <span id="displaySavings" class="text-lg sm:text-xl font-bold text-white mt-0.5 block">Ksh 24,000</span>
-                                            <span class="text-[10px] text-slate-500">In Valentor Co. Account</span>
+                                            <span class="text-[10px] text-emerald-400">Active Wallet Balance</span>
                                         </div>
                                         <div class="bg-slate-900 p-3.5 rounded-xl border border-slate-800">
                                             <span class="text-slate-400 text-xs block">Kabiru Credits</span>
@@ -774,7 +854,9 @@
         <footer class="bg-slate-950 py-12 border-t border-slate-800 text-slate-400 text-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-3">
-                    <img src="c4f1734b-0f55-4825-90c4-2adf43546ce0_3_watermark.jpg" alt="Seal" class="w-10 h-10 rounded-full border border-amber-500">
+                    <div class="w-10 h-10 rounded-full border border-amber-500 bg-slate-900 flex items-center justify-center text-emerald-400 text-lg">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
                     <div>
                         <span class="text-white font-bold block">KABIRU CHAMA ACCOUNT</span>
                         <span class="text-xs text-slate-500">Founded by The Three Initiates from the Oloo Inner Circle</span>
@@ -782,13 +864,14 @@
                 </div>
                 
                 <div class="text-center md:text-right text-xs text-slate-500">
-                    Joint Custody Account: Valentor Company Ltd Joint Signatories Account.<br>
+                    All deposits, withdrawals, and savings are processed via the <strong>Family Tree Wallet</strong>.<br>
                     Official Email: <a href="mailto:parsirai254@gmail.com" class="text-amber-400 underline">parsirai254@gmail.com</a> | &copy; 2026 Kabiru Chama Account.
                 </div>
             </div>
         </footer>
     </div>
 
+    <!-- Registration Modal -->
     <div id="joinModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-lg p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
             <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">
@@ -796,9 +879,12 @@
             </button>
 
             <div class="text-center mb-6">
-                <img src="c4f1734b-0f55-4825-90c4-2adf43546ce0_3_watermark.jpg" alt="Seal" class="w-12 h-12 rounded-full border-2 border-amber-500 mx-auto mb-3 shadow-lg">
+                <div class="w-12 h-12 rounded-full border-2 border-amber-500 bg-slate-950 text-emerald-400 flex items-center justify-center text-xl mx-auto mb-3 shadow-lg">
+                    <i class="fa-solid fa-tree"></i>
+                </div>
                 <h3 class="text-2xl font-extrabold text-white">Join Kabiru Chama Account</h3>
                 <p class="text-xs text-slate-400 mt-1">Registration: Ksh 2,000 | Min. Weekly Savings: Ksh 1,000</p>
+                <p class="text-[11px] text-amber-400 mt-1 font-semibold"><i class="fa-solid fa-wallet"></i> Managed via Family Tree Wallet</p>
             </div>
 
             <form id="chamaRegistrationForm" onsubmit="handleRegistration(event)" class="space-y-4">
@@ -859,7 +945,7 @@
                     <div>1. Click below to join the WhatsApp group: <br>
                         <a href="https://chat.whatsapp.com/DHFgg72PKgq5iaIWkW2Oo4" target="_blank" class="text-amber-400 underline font-semibold">Join Kabiru Chama WhatsApp</a>
                     </div>
-                    <div>2. Deposit your Ksh 2,000 registration fee to Valentor Co. Ltd Joint Signatories Account.</div>
+                    <div>2. Process your Ksh 2,000 registration fee via the <strong>Family Tree Wallet</strong>.</div>
                     <div>3. Register your account at <a href="https://kabiru.org" target="_blank" class="text-sky-400 underline">Kabiru.org</a> to claim equivalent Kabiru Credits!</div>
                 </div>
 
@@ -907,7 +993,8 @@
                 "Email: " + email + "\n" +
                 "Phone: " + phone + "\n" +
                 "Target Weekly Deposit: Ksh " + weekly + "\n" +
-                "Preferred Venture: " + venture + "\n\n" +
+                "Preferred Venture: " + venture + "\n" +
+                "Wallet System: Family Tree Wallet\n\n" +
                 "I am ready to pay my Ksh 2,000 registration fee and acquire equivalent Kabiru Credits on Kabiru.org."
             );
 
